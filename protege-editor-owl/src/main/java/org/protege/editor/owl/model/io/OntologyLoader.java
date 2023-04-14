@@ -104,6 +104,7 @@ public class OntologyLoader {
         PriorityCollection<OWLOntologyIRIMapper> iriMappers = loadingManager.getIRIMappers();
         iriMappers.clear();
         iriMappers.add(userResolvedIRIMapper);
+        iriMappers.add(new RosPackageIRIMapper());
         iriMappers.add(new WebConnectionIRIMapper());
         iriMappers.add(new AutoMappedRepositoryIRIMapper(
                 modelManager.getOntologyCatalogManager(), documentURI));
