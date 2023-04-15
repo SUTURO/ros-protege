@@ -5,7 +5,7 @@ via `rospack find` if they have the following format: `<owl:imports rdf:resource
 
 ## Requirements
 
-Tested to run on Ubuntu 20.04 with Java 11, Java 17 and Maven 3.9.1
+Tested to run on Ubuntu 20.04 with Java 11 or Java 17
 
 ## Usage
 
