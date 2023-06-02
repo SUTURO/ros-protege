@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROTEGE_VERSION=5.6.1
+PROTEGE_VERSION=5.6.2
 DIR=$(dirname "$(readlink -f "$0")")
 echo "$DIR"
 

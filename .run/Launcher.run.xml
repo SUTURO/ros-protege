@@ -3,7 +3,7 @@
     <option name="MAIN_CLASS_NAME" value="org.protege.osgi.framework.Launcher" />
     <module name="protege-launcher" />
     <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=$PROJECT_DIR$/protege-desktop/target/protege-5.6.1-platform-independent/Protege-5.6.1/conf/logback.xml -DentityExpansionLimit=100000000 -Dfile.encoding=UTF-8" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/protege-desktop/target/protege-5.6.1-platform-independent/Protege-5.6.1" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/protege-desktop/target/protege-5.6.2-platform-independent/Protege-5.6.2" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="org.protege.osgi.framework.*" />
