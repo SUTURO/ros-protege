@@ -21,11 +21,5 @@ public class ImportsClosureOntologyStrategyAction extends AbstractOntologySelect
         }
         return strategy;
     }
-    
-    @Override
-    public void initialise() throws Exception {    	
-        super.initialise();
-        getOWLModelManager().setActiveOntologiesStrategy(getStrategy());
-        setSelected(isCurrent());
-    }
+
 }

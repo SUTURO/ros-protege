@@ -28,7 +28,7 @@ import org.protege.editor.owl.model.inference.ReasonerPreferences;
 import org.protege.editor.owl.model.io.*;
 import org.protege.editor.owl.model.library.OntologyCatalogManager;
 import org.protege.editor.owl.model.prefix.PrefixedNameRenderer;
-import org.protege.editor.owl.model.selection.ontologies.ImportsClosureOntologySelectionStrategy;
+import org.protege.editor.owl.model.selection.ontologies.AllLoadedOntologiesSelectionStrategy;
 import org.protege.editor.owl.model.selection.ontologies.OntologySelectionStrategy;
 import org.protege.editor.owl.model.util.ListenerManager;
 import org.protege.editor.owl.model.util.OboUtilities;
@@ -165,7 +165,7 @@ public class OWLModelManagerImpl extends AbstractModelManager implements OWLMode
         owlExpressionCheckerFactory = new ManchesterOWLExpressionCheckerFactory(this);
 
         //needs to be initialized
-        activeOntologiesStrategy = new ImportsClosureOntologySelectionStrategy(this);
+        activeOntologiesStrategy = new AllLoadedOntologiesSelectionStrategy(this);
 
         historyManager = new HistoryManagerImpl(this);
 
