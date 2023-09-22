@@ -1,11 +1,17 @@
 # ros-protege
 
-ros-protege adds the ability to automatically resolve ontology imports from other sourced ROS packages
-via `rospack find` if they have the following format: `<owl:imports rdf:resource="package://knowrob/owl/URDF.owl"/>`
+Following improvements have been made to the original Protege Desktop application:
+
+* Ability to automatically resolve ontology imports from other sourced ROS packages via `rospack find` if they have the
+  following format: `<owl:imports rdf:resource="package://knowrob/owl/URDF.owl"/>`
+* Changed default view mode to `Show all loaded ontolgies`  
+  _(This fixes a bug of the OWL API not properly merging loaded ontologies from ROS packages, which led to missing
+  classes in the class tree view)_
 
 ## Requirements
 
-Tested to run on Ubuntu 20.04 with Java 11 or Java 17
+* Java 11 or higher
+* `JAVA_HOME` environment variable must be set to the JDK installation directory
 
 ## Usage
 
@@ -18,6 +24,18 @@ Tested to run on Ubuntu 20.04 with Java 11 or Java 17
     ```bash
     sh start.sh
     ```
+
+## Contributing
+
+### Recommend Code Editor
+
+We recommend using [IntelliJ IDEA](https://www.jetbrains.com/idea/) as code editor for this project.
+
+### Getting Started
+
+1. Open the project in IntelliJ IDEA
+2. Make your changes 
+3. Execute the Run-Configuration `Launcher` to start the application
 
 # Protege Desktop
 
