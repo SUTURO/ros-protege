@@ -10,17 +10,19 @@ Following improvements have been made to the original Protege Desktop applicatio
 
 ## Requirements
 
+* Unix System with ROS installed
 * Java 11 or higher
 * `JAVA_HOME` environment variable must be set to the JDK installation directory
 
 ## Usage
 
 1. Make sure you have installed the [requirements](#requirements)
-2. Build the project using the build script
+2. Clone and download this repository to your desired location
+3. Build the project using the build script
     ```bash
     sh build.sh
     ```
-3. Run ros-protege using the start script
+4. Run ros-protege using the start script
     ```bash
     sh start.sh
     ```
